@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"os"
 	"os/exec"
 	"strings"
@@ -62,7 +61,7 @@ func testForBash(name string) bool {
 func choose() string {
 	containers, err := getContainers()
 	if err != nil {
-		log.Printf("get contailers fail : %s", err)
+		fmt.Printf("get contailers fail : %s\n", err)
 		os.Exit(1)
 	}
 

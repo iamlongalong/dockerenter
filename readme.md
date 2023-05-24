@@ -25,7 +25,7 @@ sudo mv denter_mac_vx.x /usr/local/bin/
 
 ## todo
 
-- [ ] 扩展为 docker 子命令的方式
+- [ ] 扩展为 docker 子命令的方式, 或者 docker wrapper?
 
 其实不仅 docker exec 需要知道容器的名字，还有一些其他场景同样需要 容器名 或者 镜像名 或者 网络名 等等，按照这个工具所提供价值的基本原因 (把 填空题 变为 选择题)，很多场景都可以使用这种方式进行优化。
 
@@ -35,7 +35,10 @@ kubectl 中的例子: `kubectl cp` `kubectl exec` `kubectl logs` `kubectl descri
 
 从这种交互方式更近一步，就是类似于 k9s、glances、top 这种直接以 terminal 为 UI 界面的终端交互方式。
 
-之后可以考虑下更近一步
+另外，从 dcenter 的模式上，可以类似于 docker 的 exec 命令代理，站在代理的角度，可以扩展一些思路: ① 本地命令转换的代理 ② 基于网络的终端代理。
+可以想象一下，我们在本地，配置好远端的代理后，就可以直接使用 denter 在远端的机器上执行 docker exec，是不是有点小意思了？
+
+之后空了可以考虑下更近一步做点
 
 ## 其他
 

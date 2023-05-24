@@ -27,6 +27,16 @@ sudo mv denter_mac_vx.x /usr/local/bin/
 
 - [ ] 扩展为 docker 子命令的方式
 
+其实不仅 docker exec 需要知道容器的名字，还有一些其他场景同样需要 容器名 或者 镜像名 或者 网络名 等等，按照这个工具所提供价值的基本原因 (把 填空题 变为 选择题)，很多场景都可以使用这种方式进行优化。
+
+docker 中的例子: `docker cp` `docker export` `docker inspect` `docker kill` `docker logs` `docker rm` `docker rmi` `docker save` `docker export` `docker tag` `docker attach` `docker network` `docker run` `docker logs`
+helm 中的例子: `fetch` `install`
+kubectl 中的例子: `kubectl cp` `kubectl exec` `kubectl logs` `kubectl describe` ……
+
+从这种交互方式更近一步，就是类似于 k9s、glances、top 这种直接以 terminal 为 UI 界面的终端交互方式。
+
+之后可以考虑下更近一步
+
 ## 其他
 
 有任何建议，欢迎提哈 ~ 😁

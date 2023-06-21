@@ -43,3 +43,13 @@ kubectl 中的例子: `kubectl cp` `kubectl exec` `kubectl logs` `kubectl descri
 ## 其他
 
 有任何建议，欢迎提哈 ~ 😁
+
+
+## 被 ChatGPT 教育了 😭
+
+我让 chatGPT 写一个 docker 的子命令，可以选择容器，然后他给了一个 bash，直接用 fzf 这个工具完成选择，哭死
+
+用的时候，可以把 `denter.sh` 移动到 `/usr/local/bin/denter`，然后就可以用了
+但前提是要装 fzf, 可以这样 `vendor/fzf/install --no-key-bindings --completion --update-rc`
+
+然后就好了……

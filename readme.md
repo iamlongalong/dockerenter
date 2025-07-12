@@ -53,3 +53,7 @@ kubectl 中的例子: `kubectl cp` `kubectl exec` `kubectl logs` `kubectl descri
 但前提是要装 fzf, 可以这样 `vendor/fzf/install --no-key-bindings --completion --update-rc`
 
 然后就好了……
+
+## dlog
+
+用选择的方式查看容器的日志，使用 dlog 即可，可执行 dlog.sh。
